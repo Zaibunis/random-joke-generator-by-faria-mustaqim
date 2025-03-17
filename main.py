@@ -5,7 +5,7 @@ import requests
 def get_random_joke():
     """Fetch a random joke from the API"""
     try:
-        response = requests.get("http://127.0.0.1:8000/joke")
+        response = requests.get("http://127.0.0.1:8000/pakistani_jokes")
         if response.status_code == 200:
             joke_data = response.json()
             return f"{joke_data['setup']} \n\n {joke_data['punchline']}"
@@ -19,7 +19,7 @@ def main():
     st.title("🤣 Pakistani Joke Generator!")
     st.write("Click the button below to generate a random joke:")
 
-    if st.button("Tell me a joke!"):
+    if st.button("Tell me a joke?"):
         joke = get_random_joke()
         st.success(joke)
 
