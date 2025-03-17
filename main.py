@@ -5,7 +5,7 @@ import requests
 def get_random_joke():
     """Fetch a random joke from the API"""
     try:
-        response = requests.get("https://simple-api-in-python-by-faria-mustaqim.vercel.app/")
+        response = requests.get("https://pakistani-joke-generator-by-faria-mustaqim.vercel.app/")
         if response.status_code == 200:
             joke_data = response.json()
             return f"{joke_data['setup']} \n\n {joke_data['punchline']}"
