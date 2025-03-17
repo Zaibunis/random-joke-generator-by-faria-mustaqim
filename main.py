@@ -16,7 +16,7 @@ def get_random_joke():
 
 # Main Streamlit App
 def main():
-    st.title("🤣 Random Joke Generator!")
+    st.title("🤣 Pakistani Joke Generator!")
     st.write("Click the button below to generate a random joke:")
 
     if st.button("Tell me a joke!"):
